@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import styled from "styled-components";
 import Router, { useRouter } from "next/router";
 import { observer, inject } from "mobx-react";
+import { isObservable, isAction, isComputed, set } from "mobx";
 
 const MainSearchInput = inject("searchStore")(
   observer(({ searchStore }: any) => {
