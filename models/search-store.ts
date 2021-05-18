@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 
-export default function createSearchStore() {
+export default function createSearchStore(): object {
   const store = makeAutoObservable({
     search: "initVal" as string,
     num: 0 as number,
